@@ -221,17 +221,13 @@ kata16()
 titulo('kata17')
 
 function kata17() {
-    // let variavel = sampleArray[0]
-    // let lixo = ''
-    // for(let i = 0; i < sampleArray.length; i++) {
-        
-    //     if(variavel > sampleArray[i + 1]) {
-    //         lixo = sampleArray[i]
-    //     }else {
-    //         variavel = sampleArray[i]
-    //     }
-    // }
-    // showResults(variavel);
+    let variavel = sampleArray[0]
+    for(let i = 0; i < sampleArray.length; i++) {
+        if(variavel > sampleArray[i + 1]) {
+            variavel = sampleArray[i+1]
+        }
+    }
+    showResults(variavel);
 }
 
 kata17()
@@ -239,16 +235,18 @@ kata17()
 titulo('kata18')
 
 function kata18() {
-    
+    let variavel = sampleArray[0]
+    for(let i = 0; i < sampleArray.length; i++){
+        if(variavel < sampleArray[i+1]){
+            variavel = sampleArray[i+1]
+        }
+    }
+    showResults(variavel);
 }
 
 kata18() 
 
 // const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
-// Exibir o menor elemento de sampleArray.
-// Exibir o maior elemento de sampleArray.
-
-
 
 
 /**
@@ -274,8 +272,18 @@ kataBonus1()
 titulo('kataBonus2')
 
 function kataBonus2() {
-    // Exibir 20 retângulos cinza sólido, cada um com 20px de altura e larguras variando uniformemente de 105px a 200px, com o intervalo de 5px entre cada retangulo.
+
+    for(let i = 1; i <= 20; i++) {
+        let div = document.createElement('div');
+        div.style.height = '20px';
+        div.style.border = '2px dashed purple';       
+        div.style.width = 100 + 5*i + 'px';                 // Exibir 20 retângulos cinza sólido, cada um com 20px de altura e larguras variando uniformemente de 105px a 200px, com o intervalo de 5px entre cada retangulo.
+        let pai = document.getElementsByTagName('body')[0];     
+        pai.appendChild(div);
+    }
 }
+
+kataBonus2()
 
 titulo('kataBonus3')
 
