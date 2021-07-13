@@ -26,6 +26,8 @@ function kata1() {
         variavel += i + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata1()
@@ -38,6 +40,8 @@ function kata2() {
         variavel += i + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata2()
@@ -50,6 +54,8 @@ function kata3() {
         variavel += i + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata3()
@@ -62,6 +68,8 @@ function kata4() {
         variavel += i + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata4()
@@ -74,6 +82,8 @@ function kata5() {
         variavel += i + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata5()
@@ -88,6 +98,8 @@ function kata6() {
         }
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata6()
@@ -100,6 +112,8 @@ function kata7() {
         variavel += i + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata7()
@@ -113,7 +127,9 @@ function kata8() {
             variavel += i + ', '
         }
     }
-    showResults(variavel.slice(0, -2))
+    showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata8()
@@ -128,6 +144,8 @@ function kata9() {
         }
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata9()
@@ -136,6 +154,7 @@ titulo('kata10')
 
 function kata10() {
     showResults(sampleArray);
+    return sampleArray;
 }
 
 kata10()
@@ -149,7 +168,9 @@ function kata11() {
             variavel += sampleArray[i] + ', '
         }
     }
-    showResults(variavel.slice(0, -2))
+    showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata11()
@@ -163,7 +184,9 @@ function kata12() {
             variavel += sampleArray[i] + ', '
         }
     }
-    showResults(variavel.slice(0, -2))
+    showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata12()
@@ -178,6 +201,8 @@ function kata13() {
         }
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata13()
@@ -190,6 +215,8 @@ function kata14() {
         variavel += sampleArray[i]*sampleArray[i] + ', '
     }
     showResults(variavel.slice(0, -2));
+    
+    return variavel
 }
 
 kata14()
@@ -202,6 +229,7 @@ function kata15() {
         variavel += i
     }
     showResults(variavel);
+    return variavel
 }
 
 kata15()
@@ -214,6 +242,7 @@ function kata16() {
         variavel += sampleArray[i]
     }
     showResults(variavel);
+    return variavel;
 }
 
 kata16()
@@ -228,6 +257,7 @@ function kata17() {
         }
     }
     showResults(variavel);
+    return variavel;
 }
 
 kata17()
@@ -242,6 +272,7 @@ function kata18() {
         }
     }
     showResults(variavel);
+    return variavel;
 }
 
 kata18() 
@@ -276,7 +307,7 @@ function kataBonus2() {
     for(let i = 1; i <= 20; i++) {
         let div = document.createElement('div');
         div.style.height = '20px';
-        div.style.border = '2px dashed purple';       
+        div.style.border = '1px dashed purple';       
         div.style.width = 100 + 5*i + 'px';                 // Exibir 20 retângulos cinza sólido, cada um com 20px de altura e larguras variando uniformemente de 105px a 200px, com o intervalo de 5px entre cada retangulo.
         let pai = document.getElementsByTagName('body')[0];     
         pai.appendChild(div);
